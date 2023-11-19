@@ -1,5 +1,12 @@
 document.body.onload = (arguments) => {
   console.log("Hello, world!");
+  window.navigateScroll = (id) => {
+    const target = document.getElementById(id);
+    target.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
   const wrapper = document.getElementById("wrapper");
   var isOnWelcome = true;
   wrapper.onscroll = (args) => {
@@ -18,4 +25,7 @@ document.body.onload = (arguments) => {
       }
     }
   };
+  particlesJS.load("particles", "assets/particles.json", function () {
+    console.log("callback - particles.js config loaded");
+  });
 };

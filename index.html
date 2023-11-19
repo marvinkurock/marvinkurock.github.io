@@ -3,16 +3,16 @@
 
 <head>
   <title>Kurock.io - Software and Consulting</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
 
 <body>
   <nav>
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="software.html">Software</a></li>
-      <li><a href="consulting.html">Consulting</a></li>
-      <li><a href="about.html">About</a></li>
+      <li><a href="#" onclick="navigateScroll('main')">Home</a></li>
+      <li><a href="#" onclick="navigateScroll('technologies')">Technologies</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="/impressum.html">Impressum</a></li>
     </ul>
   </nav>
   <div class="wrapper" id="wrapper">
@@ -20,23 +20,127 @@
       <div class="title-text">
         <h1>Kurock</h1>
         <h2>Software and Consulting</h2>
+        <h4>aus Hamburg</h4>
       </div>
-      <img src="img/sil.png" class="bg-image-front">
+      <img src="assets/img/sil.png" class="bg-image-front">
       <div class="blur"></div>
-      <img src="img/bg.jpg" class="bg-image bg-image-behind">
+      <!-- <img src="assets/img/bg.jpg" class="bg-image bg-image-behind"> -->
+      <div id="particles"></div>
+      <div class="scroll-indicator">
+        <a href="#" onclick="navigateScroll('main');"><span></span></a>
+      </div>
     </header>
-    <main>
+    <main id="main">
       <div class="nav-bg">
         <div class="nav-bg-inner"></div>
       </div>
-      <div class="content">
-        <h2>Software and Consulting</h2>
-        <p>Coming soon...</p>
-        <div style="height: 2000px"></div>
+      <div id="content" class="content">
+        <h2 class="header-title">Software and Consulting</h2>
+        <img src="assets/img/2.png" class="profile-image" />
+        <p>Moin und herzlich willkommen! Ich bin <span class="bold">Marvin Kurock</span>, ein leidenschaftlicher
+          IT-Consultant und Programmierer
+          aus der wunderschönen Hansestadt Hamburg. Seit über einem Jahrzehnt bin ich in der faszinierenden Welt der
+          Informationstechnologie zuhause, mit einem Fokus auf Softwareentwicklung, Cloud-Infrastruktur und
+          -Architektur.
+          <br><br>
+          Meine Reise in der IT-Branche hat mir nicht nur ein tiefes Verständnis für komplexe Technologien verschafft,
+          sondern auch einen echtes DevOps-Mindset geprägt, welches es ermöglicht, Entwicklung und Betrieb nahtlos
+          miteinander zu verbinden.
+
+          <br><br>
+          Durch meine langjährige Erfahrung habe ich gelernt, dass es nicht nur darum geht, Code zu schreiben, sondern
+          vielmehr darum, Probleme zu lösen und Mehrwert für meine Kunden zu schaffen. Ich bin davon überzeugt, dass
+          maßgeschneiderte Lösungen, die auf individuelle Bedürfnisse zugeschnitten sind, der Schlüssel zum Erfolg sind.
+
+          <br><br>
+          Mein Ziel ist es, durch innovative Technologien und fortschrittliche Ansätze Ihre Visionen zu verwirklichen.
+          Als Hamburger bin ich davon überzeugt, dass harte Arbeit, Zuverlässigkeit und eine pragmatische
+          Herangehensweise die Grundlage für solide und skalierbare Lösungen bilden.
+
+          <br><br>
+          Ich freue mich darauf, gemeinsam mit Ihnen die Möglichkeiten der Technologie zu erkunden und Lösungen zu
+          entwickeln, die nicht nur effizient sind, sondern auch Ihre Erwartungen übertreffen.
+
+        </p>
+        <h2 id="technologies" class="header-title">Technologien</h2>
+        <h3 class="technology-title">Webenwicklung</h3>
+        <div class="technology-container">
+          <div class="technology-asset"></div>
+          <div class="technology-text">
+            <p>
+              Als leidenschaftlicher Webentwickler bin ich spezialisiert auf die Realisierung herausragender
+              Webanwendungen mit JavaScript und verschiedenen Frameworks. Meine umfassenden Fähigkeiten erstrecken sich
+              über Angular, React, Svelte und Vue – allesamt leistungsstarke Technologien, die ich mit Begeisterung
+              einsetze, um ansprechende und effiziente Webseiten zu gestalten.
+              <br><br>
+              Ich beherrsche auch Metaframeworks wie Next.js,
+              Nuxt.js und SvelteKit, die die Entwicklung noch weiter optimieren und beschleunigen. Durch meine
+              Kenntnisse
+              in diesen fortschrittlichen Technologien bin ich in der Lage, maßgeschneiderte Lösungen zu schaffen, die
+              den
+              modernen Standards für Webentwicklung entsprechen.
+              <br><br>
+              Profitieren Sie, wie ich durch die geschickte Anwendung von Frameworks und Metaframeworks innovative,
+              skalierbare und benutzerfreundliche Webanwendungen entwickle. Wenn Sie an einer Zusammenarbeit
+              interessiert
+              sind oder mehr über meine Fähigkeiten erfahren möchten, zögern Sie nicht, mich zu kontaktieren.
+            </p>
+          </div>
+        </div>
+        <div class="spacer"></div>
+        <h3 class="technology-title">Mobile Entwicklung</h3>
+        <div class="technology-container reverse">
+          <div class="technology-asset"></div>
+          <div class="technology-text">
+            <p>
+              Als erfahrener Dienstleister im Bereich Mobile App Development biete ich maßgeschneiderte Lösungen sowohl
+              mit React Native als auch durch native iOS Entwicklung mit Swift, SwiftUI, WidgetKit und SiriKit. In der
+              dynamischen Welt der mobilen Technologien ist es meine Leidenschaft, innovative und benutzerfreundliche
+              Anwendungen zu schaffen, die den individuellen Anforderungen meiner Kunden gerecht werden.
+              <br><br>
+              React Native - Effizient und plattformübergreifend
+              Mit React Native erstelle ich plattformübergreifende Apps, die auf iOS und Android gleichermaßen
+              beeindrucken. Die Verwendung von JavaScript ermöglicht nicht nur eine effiziente Entwicklung, sondern
+              bietet
+              auch kosteneffektive Lösungen ohne Abstriche bei der Performance. Mein Ziel ist es, Apps zu gestalten, die
+              nicht nur technisch brillant sind, sondern auch ein beeindruckendes Nutzererlebnis bieten.
+              <br><br>
+              Native iOS Entwicklung mit Swift, SwiftUI, WidgetKit und SiriKit
+              Für Kunden, die eine erstklassige iOS-Erfahrung suchen, setze ich auf die native iOS Entwicklung mit
+              Swift.
+              Dabei integriere ich fortschrittliche Technologien wie SwiftUI für moderne und deklarative
+              Benutzeroberflächen, WidgetKit für dynamische Home-Bildschirm-Widgets und SiriKit für die nahtlose
+              Integration von Sprachbefehlen und intelligenten Siri-Funktionen.
+            </p>
+          </div>
+        </div>
+        <div class="spacer"></div>
+        <h3 class="technology-title">Infrastruktur</h3>
+        <div class="technology-container">
+          <div class="technology-asset"></div>
+          <div class="technology-text">
+            <p>
+              IaC Terraform Azure AWS
+            </p>
+          </div>
+        </div>
       </div>
-    </main>
+      <div class="language-container">
+        <img src="assets/img/logos/js.png" />
+        <img style="width: 100px" src="assets/img/logos/go.png" />
+        <img style="width: 65px" style="color: white;" src="assets/img/logos/swift.png" />
+        <img style="width: 50px; margin-top: 15px; padding: 0 15px;" style="color: white;"
+          src="assets/img/logos/py.png" />
+        <img style="width: 65px" style="color: white;" src="assets/img/logos/tf.svg" />
+        <img style="width: 65px" style="color: white;" src="assets/img/logos/k8s.png" />
+        <img style="width: 65px" style="color: white;" src="assets/img/logos/azure.svg" />
+        <img style="width: 65px" style="color: white;" src="assets/img/logos/aws.svg" />
+      </div>
   </div>
-  <script src="script.js"></script>
+  </main>
+  </div>
+  <script src="assets/particles.js"></script>
+  <script src="assets/script.js"></script>
 </body>
 
 </html>
