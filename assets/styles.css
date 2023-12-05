@@ -109,6 +109,9 @@ nav a::after {
   background: white;
   transition: all 0.5s ease-in-out;
 }
+nav.inverted a::after {
+  background: #164863;
+}
 nav a:hover::after {
   width: 100%;
   opacity: 1;
@@ -127,6 +130,32 @@ nav.inverted a:link,
 nav.inverted a:visited {
   color: #164863;
   transition: color 1s ease-in-out;
+}
+
+.social-media {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.social-media a,
+.social-media a:link,
+.social-media a:visited {
+  color: #164863;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: color 0.5s ease-in-out;
+}
+
+.social-media img {
+  width: 50px;
+  vertical-align: middle;
+  padding: 0 1rem;
+  border-radius: 10px;
 }
 
 .wrapper {
@@ -343,6 +372,12 @@ div.spacer {
   .profile-image {
     width: 100%;
   }
+  #content {
+    padding: 0;
+  }
+  .header-title {
+    padding-top: 150px;
+  }
   .language-container img {
     scale: 1.5;
   }
@@ -355,9 +390,6 @@ div.spacer {
   .technology-asset {
     flex: 1;
     aspect-ratio: 1 / 1;
-  }
-  #content {
-    padding: 0;
   }
   .technology-container.reverse {
     flex-direction: column;
@@ -393,5 +425,20 @@ div.spacer {
   }
   #nav-bg {
     height: 160px;
+  }
+  .social-media {
+    text-align: left;
+    padding-left: 2rem;
+  }
+  .social-media img {
+    width: 200px;
+  }
+  .social-media a {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 4rem !important;
   }
 }

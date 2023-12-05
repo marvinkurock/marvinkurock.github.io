@@ -1,5 +1,4 @@
 document.body.onload = (arguments) => {
-  console.log("Hello, world!");
   window.navigateScroll = (id) => {
     const target = document.getElementById(id);
     target.scrollIntoView({
