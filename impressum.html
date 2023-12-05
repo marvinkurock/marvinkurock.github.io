@@ -3,15 +3,15 @@
 
 <head>
   <title>Kurock.io - Software and Consulting</title>
-  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
 
 <body>
   <nav>
     <ul>
       <li><a href="/#" onclick="navigateScroll('main')">Home</a></li>
-      <li><a href="/#" onclick="navigateScroll('about')">About</a></li>
-      <li><a href="/#" onclick="navigateScroll('technologies')">Expertiesen</a></li>
+      <li><a href="/#about">About</a></li>
+      <li><a href="/#expertise" onclick="navigateScroll('technologies')">Expertiesen</a></li>
       <li><a href="/impressum.html">Impressum</a></li>
     </ul>
   </nav>
@@ -22,7 +22,7 @@
         <h2>Software and Consulting</h2>
         <h4>aus Hamburg</h4>
       </div>
-      <img src="assets/img/sil.png" class="bg-image-front" />
+      <img src="assets/img/sil.png" class="bg-image-front">
       <div class="blur"></div>
       <!-- <img src="assets/img/bg.jpg" class="bg-image bg-image-behind"> -->
       <div id="particles"></div>
@@ -34,12 +34,10 @@
       <div id="nav-bg" class="">
         <div class="nav-bg-inner"></div>
       </div>
-      <a id="about"></a>
-      <div id="content" class="content">
+      <div id="content" id="about" class="content">
         <h2 class="header-title">Software and Consulting</h2>
         <img src="assets/img/2.png" class="profile-image" />
-        <p>
-          Moin und herzlich willkommen! Ich bin <span class="bold">Marvin Kurock</span>, ein leidenschaftlicher
+        <p>Moin und herzlich willkommen! Ich bin <span class="bold">Marvin Kurock</span>, ein leidenschaftlicher
           IT-Consultant und Programmierer
           aus der wunderschönen Hansestadt Hamburg. Seit über einem Jahrzehnt bin ich in der faszinierenden Welt der
           Informationstechnologie zuhause, mit einem Fokus auf Softwareentwicklung, Cloud-Infrastruktur und
@@ -64,7 +62,6 @@
           entwickeln, die nicht nur effizient sind, sondern auch Ihre Erwartungen übertreffen.
 
         </p>
-        <a id="expertise"></a>
         <h2 id="technologies" class="header-title">Expertiesen</h2>
         <div class="language-container">
           <img alt="JavaScript" title="JavaScript" src="assets/img/logos/js.png" />
@@ -133,48 +130,18 @@
           </div>
         </div>
         <div class="spacer"></div>
-        <h3 class="technology-title">Cyber Security</h3>
-        <div class="technology-container">
-          <div class="technology-asset" style="background-image:url('/assets/img/security.jpeg');"></div>
-          <div class="technology-text">
-            <p>
-              Mit einer tiefen Leidenschaft für Cybersecurity und einer Expertise im Bereich des White-Hat-Hacking
-              verbinde ich mein technisches Know-how mit einem ausgeprägten Auge für Sicherheit. Die Fähigkeit,
-              Schwachstellen zu erkennen und potenzielle Bedrohungen zu analysieren, ermöglicht es mir nicht nur,
-              effektive Gegenmaßnahmen zu ergreifen, sondern trägt auch entscheidend zur Entwicklung sicherer Software
-              bei. Meine Mission ist es, digitale Umgebungen zu stärken und die Vertraulichkeit, Integrität und
-              Verfügbarkeit von Informationen zu gewährleisten.
-              <br><br>
-              Zusätzlich stehe ich auch für Penetrationstests zur Verfügung, um die Sicherheitslandschaft weiter zu
-              stärken. Durch systematische Prüfungen identifiziere ich potenzielle Schwachstellen in Netzwerken,
-              Anwendungen und Systemen. Diese proaktiven Maßnahmen ermöglichen es, Sicherheitslücken frühzeitig zu
-              erkennen und zu beheben, um so die Widerstandsfähigkeit gegenüber potenziellen Angriffen zu maximieren.
-            </p>
-          </div>
-        </div>
-        <div class="spacer"></div>
         <h3 class="technology-title">Infrastruktur</h3>
-        <div class="technology-container reverse">
-          <div class="technology-asset" style="background-image: url('/assets/img/cloud.jpeg');"></div>
+        <div class="technology-container">
+          <div class="technology-asset"></div>
           <div class="technology-text">
             <p>
-              Meine Expertise erstreckt sich über die gesamte Bandbreite der Cloud-Technologien, wobei ich mich
-              besonders auf Infrastructure as Code (IaC) mit Terraform fokusiert habe. Durch die Automatisierung von
-              Ressourcenbereitstellung und -verwaltung ermöglicht Terraform eine effiziente und skalierbare
-              Infrastruktur, die den individuellen Anforderungen jedes Projekts gerecht wird.
-              <br><br>
-              Mit einem tiefgreifenden Verständnis für die besonderen Herausforderungen und Möglichkeiten, die
-              Cloud-Infrastruktur bietet, stehe ich Ihnen zur Seite, um Ihre digitalen Ambitionen zu realisieren. Lassen
-              Sie uns gemeinsam eine zukunftssichere und hochleistungsfähige Cloud-Plattform aufbauen.
-              <br><br>
-              Kontaktieren Sie mich, um mehr darüber zu erfahren, wie ich Ihnen dabei helfen kann, Ihre Cloud-Strategie
-              zu optimieren und Ihre digitale Transformation voranzutreiben.
+              IaC Terraform Azure AWS
             </p>
           </div>
         </div>
       </div>
-      <footer>(c) 2024 Marvin Kurock - kurock.io</footer>
-    </main>
+  </div>
+  </main>
   </div>
   <script src="assets/particles.js"></script>
   <script src="assets/script.js"></script>
