@@ -24,7 +24,7 @@
         <h2>Software and Consulting</h2>
         <h4>aus Hamburg</h4>
       </div>
-      <img src="assets/img/sil.png" class="bg-image-front" />
+      <img src="assets/img/sil.png" class="bg-image-front -bottom-60 lg:-bottom-32" />
       <div class="blur"></div>
       <!-- <img src="assets/img/bg.jpg" class="bg-image bg-image-behind"> -->
       <div id="particles"></div>
@@ -37,11 +37,11 @@
         <div class="nav-bg-inner"></div>
       </div>
       <a id="about"></a>
-      <div id="content" class="content">
+      <div id="content" class="max-w-screen-lg mx-auto my-0 bg-white lg:p-5">
         <h2 class="header-title">Software and Consulting</h2>
-        <img src="assets/img/2.png" class="profile-image" />
-        <p>
-          Moin und herzlich willkommen! Ich bin <span class="bold">Marvin Kurock</span>, ein leidenschaftlicher
+        <img src="assets/img/2.png" class="float-left w-full lg:w-72 mr-8 mb-8" />
+        <p class="text-5xl lg:text-base px-8 lg:px-0">
+          Moin und herzlich willkommen! Ich bin <span class="font-bold">Marvin Kurock</span>, ein leidenschaftlicher
           IT-Consultant und Programmierer
           aus der wunderschönen Hansestadt Hamburg. Seit über einem Jahrzehnt bin ich in der faszinierenden Welt der
           Informationstechnologie zuhause, mit einem Fokus auf Softwareentwicklung, Cloud-Infrastruktur und
@@ -67,26 +67,28 @@
         </p>
         <a id="expertise"></a>
         <h2 id="technologies" class="header-title">Expertise</h2>
-        <div class="language-container">
-          <img alt="JavaScript" title="JavaScript" src="assets/img/logos/js.png" />
-          <img alt="Golang" title="Golang" style="width: 100px" src="assets/img/logos/go.png" />
-          <img alt="Swift" title="Swift" style="width: 65px" style="color: white;" src="assets/img/logos/swift.png" />
-          <img alt="Pyhton" title="Pyhton" style="width: 50px; margin-top: 15px; padding: 0 15px;" style="color: white;"
-            src="assets/img/logos/py.png" />
-          <img alt="Terraform" title="Terraform" style="width: 65px" style="color: white;"
+        <div class="h-36 w-full flex flex-row justify-center scale-150 lg:scale-100">
+          <img class="w-12 object-contain" alt="JavaScript" title="JavaScript" src="assets/img/logos/js.png" />
+          <img class="w-12 object-contain" alt="Golang" title="Golang" style="width: 100px"
+            src="assets/img/logos/go.png" />
+          <img class="w-12 object-contain" alt="Swift" title="Swift" style="width: 65px" style="color: white;"
+            src="assets/img/logos/swift.png" />
+          <img class="w-20 object-contain py-0 px-4 mt-4" alt="Pyhton" title="Pyhton" src="assets/img/logos/py.png" />
+          <img class="w-12 object-contain" alt="Terraform" title="Terraform" style="width: 65px" style="color: white;"
             src="assets/img/logos/tf.svg" />
-          <img alt="Kubernetes" title="Kubernetes" style="width: 65px" style="color: white;"
+          <img class="w-12 object-contain" alt="Kubernetes" title="Kubernetes" style="width: 65px" style="color: white;"
             src="assets/img/logos/k8s.png" />
-          <img alt="Microsoft Azure" title="Microsoft Azure" style="width: 65px" style="color: white;"
-            src="assets/img/logos/azure.svg" />
-          <img alt="AWS - Amazon Web Services" title="AWS - Amazon Web Services" style="width: 65px"
-            style="color: white;" src="assets/img/logos/aws.svg" />
+          <img class="w-12 object-contain" alt="Microsoft Azure" title="Microsoft Azure" style="width: 65px"
+            style="color: white;" src="assets/img/logos/azure.svg" />
+          <img class="w-12 object-contain" alt="AWS - Amazon Web Services" title="AWS - Amazon Web Services"
+            style="width: 65px" style="color: white;" src="assets/img/logos/aws.svg" />
         </div>
         <h3 class="technology-title">Webenwicklung</h3>
-        <div class="technology-container">
-          <div class="technology-asset" style="background-image: url('assets/img/web.jpg');"></div>
-          <div class="technology-text">
-            <p>
+        <div class="flex flex-col lg:flex-row ">
+          <div class="bg-center bg-cover flex-1 lg:grow-0 aspect-square lg:basis-[400px]"
+            style="background-image: url('assets/img/web.jpg');"></div>
+          <div class="flex-1 px-8 lg:px-4">
+            <p class="text-5xl lg:text-base">
               Als leidenschaftlicher Webentwickler bin ich spezialisiert auf die Realisierung herausragender
               Webanwendungen mit JavaScript und verschiedenen Frameworks. Meine umfassenden Fähigkeiten erstrecken sich
               über Angular, React, Svelte und Vue – allesamt leistungsstarke Technologien, die ich mit Begeisterung
@@ -108,10 +110,11 @@
         </div>
         <div class="spacer"></div>
         <h3 class="technology-title">Mobile Entwicklung</h3>
-        <div class="technology-container reverse">
-          <div class="technology-asset" style="background-image:url('/assets/img/app.jpg');"></div>
-          <div class="technology-text">
-            <p>
+        <div class="flex flex-col lg:flex-row-reverse ">
+          <div class="bg-center bg-cover flex-1 lg:grow-0 aspect-square lg:basis-[400px]"
+            style="background-image:url('/assets/img/app.jpg');"></div>
+          <div class="flex-1 px-8 lg:px-4">
+            <p class="text-5xl lg:text-base">
               Als erfahrener Dienstleister im Bereich Mobile App Development biete ich maßgeschneiderte Lösungen sowohl
               mit React Native als auch durch native iOS Entwicklung mit Swift, SwiftUI, WidgetKit und SiriKit. In der
               dynamischen Welt der mobilen Technologien ist es meine Leidenschaft, innovative und benutzerfreundliche
@@ -135,10 +138,11 @@
         </div>
         <div class="spacer"></div>
         <h3 class="technology-title">Cyber Security</h3>
-        <div class="technology-container">
-          <div class="technology-asset" style="background-image:url('/assets/img/security.jpeg');"></div>
-          <div class="technology-text">
-            <p>
+        <div class="flex flex-col lg:flex-row ">
+          <div class="bg-center bg-cover flex-1 lg:grow-0 aspect-square lg:basis-[400px]"
+            style="background-image:url('/assets/img/security.jpeg');"></div>
+          <div class="flex-1 px-8 lg:px-4">
+            <p class="text-5xl lg:text-base">
               Mit einer tiefen Leidenschaft für Cybersecurity und einer Expertise im Bereich des White-Hat-Hacking
               verbinde ich mein technisches Know-how mit einem ausgeprägten Auge für Sicherheit. Die Fähigkeit,
               Schwachstellen zu erkennen und potenzielle Bedrohungen zu analysieren, ermöglicht es mir nicht nur,
@@ -155,10 +159,11 @@
         </div>
         <div class="spacer"></div>
         <h3 class="technology-title">Infrastruktur</h3>
-        <div class="technology-container reverse">
-          <div class="technology-asset" style="background-image: url('/assets/img/cloud.jpeg');"></div>
-          <div class="technology-text">
-            <p>
+        <div class="flex flex-col lg:flex-row-reverse">
+          <div class="bg-center bg-cover flex-1 lg:grow-0 aspect-square lg:basis-[400px]"
+            style="background-image: url('/assets/img/cloud.jpeg');"></div>
+          <div class="flex-1 px-8 lg:px-4">
+            <p class="text-5xl lg:text-base">
               Meine Expertise erstreckt sich über die gesamte Bandbreite der Cloud-Technologien, wobei ich mich
               besonders auf Infrastructure as Code (IaC) mit Terraform fokusiert habe. Durch die Automatisierung von
               Ressourcenbereitstellung und -verwaltung ermöglicht Terraform eine effiziente und skalierbare
@@ -183,7 +188,7 @@
           <a href="" rel="noopener noreferrer"><img src="assets/img/mail.png" />marvin(at)kurock.io</a>
         </div>
       </div>
-      <footer>(c) 2024 Marvin Kurock - kurock.io</footer>
+      <footer class="p-10">(c) 2024 Marvin Kurock - kurock.io</footer>
     </main>
   </div>
   <script src="assets/particles.js"></script>

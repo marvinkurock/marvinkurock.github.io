@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "start": "live-server",
+    "build": "npx tailwindcss -i ./input.css -o ./assets/styles.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.6"
+  }
+}
