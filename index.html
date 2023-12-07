@@ -7,7 +7,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav class="fixed left-0 right-0 top-0 text-center z-10 pt-12 lg:pt-[10px] text-3xl lg:text-base">
     <ul>
       <li><a href="/#" onclick="navigateScroll('main')">Home</a></li>
       <li><a href="/#" onclick="navigateScroll('about')">About</a></li>
@@ -33,7 +33,7 @@
       </div>
     </header>
     <main>
-      <div id="nav-bg" class="">
+      <div id="nav-bg" class="sticky z-50 top-0 left-0 h-32 opacity-0 bg-white shadow-lg lg:h-12">
         <div class="nav-bg-inner"></div>
       </div>
       <a id="about"></a>
@@ -83,11 +83,11 @@
           <img class="w-12 object-contain" alt="AWS - Amazon Web Services" title="AWS - Amazon Web Services"
             style="width: 65px" style="color: white;" src="assets/img/logos/aws.svg" />
         </div>
-        <h3 class="technology-title">Webenwicklung</h3>
+        <h3 class="text-center py-10 text-6xl lg:text-4xl">Webenwicklung</h3>
         <div class="flex flex-col lg:flex-row ">
           <div class="bg-center bg-cover flex-1 lg:grow-0 aspect-square lg:basis-[400px]"
             style="background-image: url('assets/img/web.jpg');"></div>
-          <div class="flex-1 px-8 lg:px-4">
+          <div class="flex-1 px-8 lg:px-4 py-8 lg:py-0">
             <p class="text-5xl lg:text-base">
               Als leidenschaftlicher Webentwickler bin ich spezialisiert auf die Realisierung herausragender
               Webanwendungen mit JavaScript und verschiedenen Frameworks. Meine umfassenden Fähigkeiten erstrecken sich
@@ -109,11 +109,11 @@
           </div>
         </div>
         <div class="spacer"></div>
-        <h3 class="technology-title">Mobile Entwicklung</h3>
+        <h3 class="text-center py-10 text-6xl lg:text-4xl">Mobile Entwicklung</h3>
         <div class="flex flex-col lg:flex-row-reverse ">
           <div class="bg-center bg-cover flex-1 lg:grow-0 aspect-square lg:basis-[400px]"
             style="background-image:url('/assets/img/app.jpg');"></div>
-          <div class="flex-1 px-8 lg:px-4">
+          <div class="flex-1 px-8 lg:px-4 py-8 lg:py-0">
             <p class="text-5xl lg:text-base">
               Als erfahrener Dienstleister im Bereich Mobile App Development biete ich maßgeschneiderte Lösungen sowohl
               mit React Native als auch durch native iOS Entwicklung mit Swift, SwiftUI, WidgetKit und SiriKit. In der
@@ -137,11 +137,11 @@
           </div>
         </div>
         <div class="spacer"></div>
-        <h3 class="technology-title">Cyber Security</h3>
+        <h3 class="text-center py-10 text-6xl lg:text-4xl">Cyber Security</h3>
         <div class="flex flex-col lg:flex-row ">
           <div class="bg-center bg-cover flex-1 lg:grow-0 aspect-square lg:basis-[400px]"
             style="background-image:url('/assets/img/security.jpeg');"></div>
-          <div class="flex-1 px-8 lg:px-4">
+          <div class="flex-1 px-8 lg:px-4 py-8 lg:py-0">
             <p class="text-5xl lg:text-base">
               Mit einer tiefen Leidenschaft für Cybersecurity und einer Expertise im Bereich des White-Hat-Hacking
               verbinde ich mein technisches Know-how mit einem ausgeprägten Auge für Sicherheit. Die Fähigkeit,
@@ -158,11 +158,11 @@
           </div>
         </div>
         <div class="spacer"></div>
-        <h3 class="technology-title">Infrastruktur</h3>
+        <h3 class="text-center py-10 text-6xl lg:text-4xl">Infrastruktur</h3>
         <div class="flex flex-col lg:flex-row-reverse">
           <div class="bg-center bg-cover flex-1 lg:grow-0 aspect-square lg:basis-[400px]"
             style="background-image: url('/assets/img/cloud.jpeg');"></div>
-          <div class="flex-1 px-8 lg:px-4">
+          <div class="flex-1 px-8 lg:px-4 py-8 lg:py-0">
             <p class="text-5xl lg:text-base">
               Meine Expertise erstreckt sich über die gesamte Bandbreite der Cloud-Technologien, wobei ich mich
               besonders auf Infrastructure as Code (IaC) mit Terraform fokusiert habe. Durch die Automatisierung von
@@ -179,16 +179,24 @@
           </div>
         </div>
         <a id="contact"></a>
-        <h2 class="header-title">Kontakt</h2>
-        <div class="social-media">
-          <a href="https://www.linkedin.com/in/marvin-kurock-34857b1b6/" target="_blank" rel="noopener noreferrer"><img
-              src="assets/img/linkedin.png" />LinkedIn</a>
-          <a href="https://www.xing.com/profile/Marvin_Kurock/" target="_blank" rel="noopener noreferrer"><img
+        <h2 class="text-center py-10 text-6xl lg:text-4xl">Kontakt</h2>
+        <div class="text-center py-4 lg:block">
+          <a class="text-[#164863] font-bold flex flex-col items-center text-center text-5xl py-12 lg:text-xl px-8
+                     lg:inline" href="https://www.linkedin.com/in/marvin-kurock-34857b1b6/" target="_blank"
+            rel="noopener noreferrer">
+            <img class="mr-4 mb-4 lg:mb-0 inline w-52 rounded-xl lg:w-12" src="assets/img/linkedin.png" />LinkedIn
+          </a>
+          <a class="text-[#164863] font-bold flex flex-col items-center text-center text-5xl py-12 lg:text-xl px-8
+                     lg:inline" href="https://www.xing.com/profile/Marvin_Kurock/" target="_blank"
+            rel="noopener noreferrer"><img class="mr-4 mb-4 lg:mb-0 inline w-52 rounded-xl lg:w-12"
               src="assets/img/xing.png" />XING</a>
-          <a href="" rel="noopener noreferrer"><img src="assets/img/mail.png" />marvin(at)kurock.io</a>
+          <a href="#" onclick="xyz()" class="text-[#164863] font-bold flex flex-col items-center text-center text-5xl py-12 lg:text-xl px-8
+                     lg:inline" href="" rel="noopener noreferrer"><img
+              class="mr-4 mb-4 lg:mb-0 inline w-52 align-middle rounded-xl lg:w-12"
+              src="assets/img/mail.png" />marvin(@)kurock.io</a>
         </div>
       </div>
-      <footer class="p-10">(c) 2024 Marvin Kurock - kurock.io</footer>
+      <footer class="p-10 text-center text-3xl lg:text-base">(c) 2024 Marvin Kurock - kurock.io</footer>
     </main>
   </div>
   <script src="assets/particles.js"></script>

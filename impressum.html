@@ -3,25 +3,27 @@
 
 <head>
   <title>Kurock.io - Software and Consulting</title>
-  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/styles.css" />
 </head>
 
 <body>
-  <nav class="inverted">
+  <nav class="fixed left-0 right-0 top-0 text-center z-10 pt-12 lg:pt-[10px] text-3xl lg:text-base inverted">
     <ul>
-      <li><a href="/#" onclick="navigateScroll('main')">Home</a></li>
+      <li><a href="/#">Home</a></li>
       <li><a href="/#about">About</a></li>
-      <li><a href="/#expertise" onclick="navigateScroll('technologies')">Expertisen</a></li>
+      <li><a href="/#expertise">Expertise</a></li>
       <li><a href="/#contact">Kontakt</a></li>
       <li><a href="/impressum.html">Impressum</a></li>
     </ul>
   </nav>
   <div class="wrapper" id="wrapper">
-    <main id="main">
-      <div id="nav-bg" class="nav-bg-colored">
+    <a id="main"></a>
+    <main>
+      <div id="nav-bg" class="sticky z-50 top-0 left-0 h-32 opacity-100 bg-white shadow-lg lg:h-12">
         <div class="nav-bg-inner"></div>
       </div>
-      <div id="content" class="content">
+      <a id="about"></a>
+      <div id="content" class="text-5xl lg:text-base max-w-screen-lg mx-auto my-0 bg-white lg:p-5">
         <h2 class="header-title">Impressum</h2>
         <div style="text-align: center; padding-bottom: 25px;">
           <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
@@ -225,8 +227,8 @@
               rel="noopener noreferrer">https://policies.google.com/privacy?hl=de</a>.</p>
           <p>Quelle: <a href="https://www.e-recht24.de">https://www.e-recht24.de</a></p>
         </div>
-      </div>
-      <div style="height: 50px;"></div>
+
+        <footer class="p-10 text-center text-3xl lg:text-base">(c) 2024 Marvin Kurock - kurock.io</footer>
     </main>
   </div>
 </body>

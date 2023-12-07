@@ -20,13 +20,6 @@ body {
   }
 }
 nav {
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  text-align: center;
-  z-index: 100;
-  padding: 15px 0;
   animation: slideIn 0.5s ease-in-out;
 }
 
@@ -37,13 +30,7 @@ h2.header-title {
   margin-bottom: 0.5rem;
   text-align: center;
 }
-h3.technology-title {
-  padding-bottom: 2rem;
-  font-size: 2.5rem;
-  font-weight: 400;
-  margin-bottom: 0.5rem;
-  text-align: center;
-}
+
 nav ul {
   list-style: none;
 }
@@ -57,19 +44,18 @@ nav ul li {
   margin: 0 1rem;
 }
 
-#nav-bg {
-  position: sticky;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  height: 50px;
-  opacity: 0;
-  background: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
+/* #nav-bg { */
+/*   position: sticky; */
+/*   z-index: 1000; */
+/*   top: 0; */
+/*   left: 0; */
+/*   height: 50px; */
+/*   opacity: 0; */
+/*   background: #fff; */
+/*   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+/* } */
 
-#nav-bg.nav-bg-colored {
-  opacity: 1;
+#nav-bg.opacity-100 {
   transition: opacity 0.5s ease-in-out;
 }
 
@@ -78,7 +64,6 @@ nav a:link,
 nav a:visited {
   color: #fff;
   text-decoration: none;
-  font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
   transition: color 0.5s ease-in-out;
@@ -116,15 +101,15 @@ nav.inverted a:visited {
   color: #164863;
   transition: color 1s ease-in-out;
 }
-
-.social-media {
-  text-align: center;
-  padding: 1rem 0;
-}
-
 p {
   margin-bottom: 1rem;
 }
+
+/* .social-media { */
+/*   text-align: center; */
+/*   padding: 1rem 0; */
+/* } */
+/**/
 
 /* .social-media a, */
 /* .social-media a:link, */

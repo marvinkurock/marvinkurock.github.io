@@ -16,14 +16,14 @@ document.body.onload = (arguments) => {
         console.log("Scrolled past welcome section!");
         console.log(document.getElementsByTagName("nav"));
         document.getElementsByTagName("nav")[0].classList.add("inverted");
-        document.getElementById("nav-bg").classList.add("nav-bg-colored");
+        document.getElementById("nav-bg").classList.add("opacity-100");
       }
     } else {
       if (!isOnWelcome) {
         isOnWelcome = true;
         console.log("Scrolled back to welcome section!");
         document.getElementsByTagName("nav")[0].classList.remove("inverted");
-        document.getElementById("nav-bg").classList.remove("nav-bg-colored");
+        document.getElementById("nav-bg").classList.remove("opacity-100");
       }
     }
   };
@@ -40,4 +40,11 @@ document.body.onload = (arguments) => {
       console.log("callback - particles.js config loaded");
     });
   }
+
+  window.xyz = () => {
+    let x = "bWFpbHRvOm1hcnZpbkBrdXJvY2suaW8=";
+    let y = atob(x);
+    window.location.href = y;
+    return false;
+  };
 };
