@@ -27,20 +27,29 @@ document.body.onload = (arguments) => {
       }
     }
   };
+  let particlesFile = "assets/particles.json";
+  let month = new Date().getMonth() + 1;
+  const snowMonths = [11, 12, 1, 2];
+  if (snowMonths.includes(month)) {
+    particlesFile = "assets/snow.json";
+  }
+
+  // Mobile for performance
   if (
     navigator.userAgent.match(/iPhone/i) ||
     navigator.userAgent.match(/iPad/i) ||
     navigator.userAgent.match(/iPod/i)
   ) {
-    particlesJS.load("particles", "assets/mobile.json", function () {
-      console.log("callback - particles.js config loaded (mobile)");
-    });
-  } else {
-    particlesJS.load("particles", "assets/particles.json", function () {
-      console.log("callback - particles.js config loaded");
-    });
+    if (snowMonths.includes(month)) {
+      particlesFile = "assets/snow-mobile.json";
+    } else {
+      particlesFile = "assets/mobile.json";
+    }
   }
 
+  particlesJS.load("particles", particlesFile, function () {
+    console.log("callback - particles.js config loaded (mobile)");
+  });
   window.xyz = () => {
     let x = "bWFpbHRvOm1hcnZpbkBrdXJvY2suaW8=";
     let y = atob(x);
