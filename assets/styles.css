@@ -548,8 +548,8 @@ video {
   position: sticky;
 }
 
-.-bottom-60 {
-  bottom: -15rem;
+.bottom-56 {
+  bottom: 14rem;
 }
 
 .left-0 {
@@ -570,6 +570,10 @@ video {
 
 .z-50 {
   z-index: 50;
+}
+
+.float-right {
+  float: right;
 }
 
 .float-left {
@@ -606,6 +610,14 @@ video {
   margin-top: 1rem;
 }
 
+.-mt-16 {
+  margin-top: -4rem;
+}
+
+.-mt-8 {
+  margin-top: -2rem;
+}
+
 .block {
   display: block;
 }
@@ -620,6 +632,10 @@ video {
 
 .aspect-square {
   aspect-ratio: 1 / 1;
+}
+
+.h-3\/4 {
+  height: 75%;
 }
 
 .h-32 {
@@ -640,6 +656,10 @@ video {
 
 .w-52 {
   width: 13rem;
+}
+
+.w-auto {
+  width: auto;
 }
 
 .w-full {
@@ -683,6 +703,11 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-cover {
@@ -737,12 +762,21 @@ video {
   padding-bottom: 2rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .pt-12 {
   padding-top: 3rem;
 }
 
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .align-middle {
@@ -764,12 +798,20 @@ video {
   line-height: 1;
 }
 
-.font-bold {
-  font-weight: 700;
+.text-\[9rem\] {
+  font-size: 9rem;
 }
 
-.leading-tight {
-  line-height: 1.25;
+.text-\[1\.5rem\] {
+  font-size: 1.5rem;
+}
+
+.text-\[2rem\] {
+  font-size: 2rem;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .leading-normal {
@@ -781,12 +823,21 @@ video {
   color: rgb(22 72 99 / var(--tw-text-opacity));
 }
 
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .opacity-0 {
   opacity: 0;
 }
 
 .opacity-100 {
   opacity: 1;
+}
+
+.mix-blend-overlay {
+  mix-blend-mode: overlay;
 }
 
 .shadow-lg {
@@ -1016,21 +1067,33 @@ header h1 {
   -webkit-text-fill-color: transparent;
 }
 
-header h2 {
-  margin-top: -0.5rem;
-  background: -webkit-linear-gradient(45deg, #ddf2fd, #fff 80%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+/* header h2 { */
 
-header h4 {
-  font-size: 0.8rem;
-  margin-top: 0rem;
-  text-align: right;
-  background: -webkit-linear-gradient(45deg, #ddf2fd, #fff 80%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+/*   margin-top: -0.5rem; */
+
+/*   background: -webkit-linear-gradient(45deg, #ddf2fd, #fff 80%); */
+
+/*   -webkit-background-clip: text; */
+
+/*   -webkit-text-fill-color: transparent; */
+
+/* } */
+
+/* header h4 { */
+
+/*   font-size: 0.8rem; */
+
+/*   margin-top: 0rem; */
+
+/*   text-align: right; */
+
+/*   background: -webkit-linear-gradient(45deg, #ddf2fd, #fff 80%); */
+
+/*   -webkit-background-clip: text; */
+
+/*   -webkit-text-fill-color: transparent; */
+
+/* } */
 
 .bg-image {
   position: absolute;
@@ -1088,10 +1151,10 @@ header h4 {
 .bg-image-front {
   position: absolute;
   background-color: transparent;
-  right: 0;
-  width: 100%;
+  /* right: 0; */
+  /* width: 100%; */
   min-height: 55%;
-  filter: invert(0%) saturate(0) contrast(100%) brightness(0);
+  /* filter: invert(0%) saturate(0) contrast(100%) brightness(0); */
   color: #fff;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1166,12 +1229,16 @@ main {
 }
 
 @media (min-width: 1024px) {
-  .lg\:-bottom-32 {
-    bottom: -8rem;
+  .lg\:bottom-16 {
+    bottom: 4rem;
   }
 
   .lg\:mb-0 {
     margin-bottom: 0px;
+  }
+
+  .lg\:-mt-16 {
+    margin-top: -4rem;
   }
 
   .lg\:block {
@@ -1186,8 +1253,16 @@ main {
     height: 3rem;
   }
 
+  .lg\:h-auto {
+    height: auto;
+  }
+
   .lg\:w-12 {
     width: 3rem;
+  }
+
+  .lg\:w-2\/3 {
+    width: 66.666667%;
   }
 
   .lg\:w-72 {
@@ -1244,6 +1319,10 @@ main {
     line-height: 2.5rem;
   }
 
+  .lg\:text-\[15rem\] {
+    font-size: 15rem;
+  }
+
   .lg\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -1252,5 +1331,17 @@ main {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:text-\[4rem\] {
+    font-size: 4rem;
+  }
+
+  .lg\:text-\[3rem\] {
+    font-size: 3rem;
+  }
+
+  .lg\:text-\[2rem\] {
+    font-size: 2rem;
   }
 }

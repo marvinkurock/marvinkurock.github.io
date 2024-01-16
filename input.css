@@ -175,21 +175,21 @@ header h1 {
   -webkit-text-fill-color: transparent;
 }
 
-header h2 {
-  margin-top: -0.5rem;
-  background: -webkit-linear-gradient(45deg, #ddf2fd, #fff 80%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+/* header h2 { */
+/*   margin-top: -0.5rem; */
+/*   background: -webkit-linear-gradient(45deg, #ddf2fd, #fff 80%); */
+/*   -webkit-background-clip: text; */
+/*   -webkit-text-fill-color: transparent; */
+/* } */
 
-header h4 {
-  font-size: 0.8rem;
-  margin-top: 0rem;
-  text-align: right;
-  background: -webkit-linear-gradient(45deg, #ddf2fd, #fff 80%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+/* header h4 { */
+/*   font-size: 0.8rem; */
+/*   margin-top: 0rem; */
+/*   text-align: right; */
+/*   background: -webkit-linear-gradient(45deg, #ddf2fd, #fff 80%); */
+/*   -webkit-background-clip: text; */
+/*   -webkit-text-fill-color: transparent; */
+/* } */
 
 .bg-image {
   position: absolute;
@@ -234,10 +234,10 @@ header h4 {
 .bg-image-front {
   position: absolute;
   background-color: transparent;
-  right: 0;
-  width: 100%;
+  /* right: 0; */
+  /* width: 100%; */
   min-height: 55%;
-  filter: invert(0%) saturate(0) contrast(100%) brightness(0);
+  /* filter: invert(0%) saturate(0) contrast(100%) brightness(0); */
   color: #fff;
   object-fit: cover;
   transform: translateZ(-5px) scale(1.5);
