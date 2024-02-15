@@ -5,10 +5,11 @@
   <title>Kurock.io - Software and Consulting</title>
   <link rel="icon" type="image/x-icon" href="/assets/fav.ico">
   <link rel="stylesheet" href="assets/styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 </head>
 
 <body>
-  <nav class="fixed left-0 right-0 top-0 text-center z-10 pt-12 lg:pt-[10px] text-3xl lg:text-base">
+  <nav class="fixed left-0 right-0 top-0 text-center z-10 pt-8 lg:pt-[10px] text-xs lg:text-base">
     <ul>
       <li><a href="/#" onclick="navigateScroll('main')">Home</a></li>
       <li><a href="/#" onclick="navigateScroll('about')">About</a></li>
@@ -21,14 +22,14 @@
     <a id="main"></a>
     <header>
       <div class="title-text">
-        <h1 class="text-[9rem] lg:text-[15rem]">Kurock</h1>
+        <h1 class="text-[7rem] lg:text-[15rem]">Kurock</h1>
         <h2 class="text-[2rem] lg:text-[3rem] px-4 text-white bg-black text-right -mt-8 lg:-mt-16">Software und
           Consulting</h2>
         <h4 class="float-right text-[1.5rem] lg:text-[2rem] px-4 text-white bg-black text-right">aus Hamburg</h4>
       </div>
-      <img src="assets/img/hamburg.png"
-        class="bg-image-front bottom-56 lg:bottom-16 mix-blend-overlay h-3/4 lg:h-auto w-auto lg:w-2/3" />
-      <div class="blur"></div>
+      <img src="assets/img/hamburg.png" class="bg-image-front mix-blend-overlay h-full lg:h-auto w-auto lg:w-full" />
+      <div class=" blur">
+      </div>
       <!-- <img src="assets/img/bg.jpg" class="bg-image bg-image-behind"> -->
       <div id="particles"></div>
       <div class="scroll-indicator">
@@ -36,14 +37,14 @@
       </div>
     </header>
     <main>
-      <div id="nav-bg" class="sticky z-50 top-0 left-0 h-32 opacity-0 bg-white shadow-lg lg:h-12">
+      <div id="nav-bg" class="sticky z-50 top-0 left-0 h-20 opacity-0 bg-white shadow-lg lg:h-12">
         <div class="nav-bg-inner"></div>
       </div>
       <a id="about"></a>
       <div id="content" class="max-w-screen-lg mx-auto my-0 bg-white lg:p-5">
         <h2 class="header-title">Software and Consulting</h2>
         <img src="assets/img/2.png" class="float-left w-full lg:w-72 mr-8 mb-8" />
-        <p class="text-5xl leading-normal lg:text-base px-8 lg:px-0">
+        <p class="text-lg leading-normal lg:text-base px-8 lg:px-0">
           Moin und herzlich willkommen! Ich bin <span class="font-bold">Marvin Kurock</span>, ein leidenschaftlicher
           IT-Consultant und Software-Entwickler
           aus der wunderschönen Hansestadt Hamburg. Seit über einem Jahrzehnt bin ich in der faszinierenden Welt der
@@ -70,7 +71,7 @@
         </p>
         <a id="expertise"></a>
         <h2 id="technologies" class="header-title">Expertise</h2>
-        <div class="h-36 w-full flex flex-row justify-center scale-150 lg:scale-100">
+        <div class="h-36 w-full flex flex-row flex-wrap justify-center scale-100">
           <img class="w-12 object-contain" alt="JavaScript" title="JavaScript" src="assets/img/logos/js.png" />
           <img class="w-12 object-contain" alt="Golang" title="Golang" style="width: 100px"
             src="assets/img/logos/go.png" />
@@ -88,12 +89,12 @@
           <img class="w-12 object-contain" alt="Kali Linux - Offensive Security" title="Kali Linux - Offensive Security"
             style="width: 65px" style="color: white;" src="assets/img/logos/kali.png" />
         </div>
-        <h3 class="text-center py-10 text-6xl lg:text-4xl">Webenwicklung</h3>
+        <h3 class="text-center py-10 text-3xl lg:text-4xl">Webenwicklung</h3>
         <div class="flex flex-col lg:flex-row ">
           <div class="bg-center bg-cover flex-1 lg:grow-0 aspect-square lg:basis-[400px]"
             style="background-image: url('assets/img/web.png');"></div>
           <div class="flex-1 px-8 lg:px-4 py-8 lg:py-0">
-            <p class="text-5xl leading-normal lg:text-base">
+            <p class="text-lg leading-normal lg:text-base">
               Als langjähriger Webentwickler bin ich spezialisiert auf die Realisierung herausragender
               Webanwendungen mit JavaScript/Typescript und verschiedenen Frameworks. Meine umfassenden Fähigkeiten
               erstrecken sich
@@ -116,12 +117,12 @@
           </div>
         </div>
         <div class="spacer"></div>
-        <h3 class="text-center py-10 text-6xl lg:text-4xl">Mobile Entwicklung</h3>
+        <h3 class="text-center py-10 text-3xl lg:text-4xl">Mobile Entwicklung</h3>
         <div class="flex flex-col lg:flex-row-reverse ">
           <div class="bg-center bg-cover flex-1 lg:grow-0 aspect-square lg:basis-[400px]"
             style="background-image:url('/assets/img/appdev.png');"></div>
           <div class="flex-1 px-8 lg:px-4 py-8 lg:py-0">
-            <p class="text-5xl leading-normal lg:text-base">
+            <p class="text-lg leading-normal lg:text-base">
               Als erfahrener Dienstleister im Bereich Mobile App Development biete ich maßgeschneiderte Lösungen sowohl
               mit React Native als auch durch native iOS Entwicklung mit Swift, SwiftUI, WidgetKit und SiriKit. In der
               dynamischen Welt der mobilen Technologien ist es mein Ziel, innovative und benutzerfreundliche
@@ -145,12 +146,12 @@
           </div>
         </div>
         <div class="spacer"></div>
-        <h3 class="text-center py-10 text-6xl lg:text-4xl">Infrastruktur</h3>
+        <h3 class="text-center py-10 text-3xl lg:text-4xl">Infrastruktur</h3>
         <div class="flex flex-col lg:flex-row">
           <div class="bg-center bg-cover flex-1 lg:grow-0 aspect-square lg:basis-[400px]"
             style="background-image: url('/assets/img/cloud.png');"></div>
           <div class="flex-1 px-8 lg:px-4 py-8 lg:py-0">
-            <p class="text-5xl leading-normal lg:text-base">
+            <p class="text-lg leading-normal lg:text-base">
               Durch meine langjährige Erfahrung erstreckt sich meine Expertise über die gesamte Bandbreite der
               Cloud-Technologien, wobei ich mich
               besonders auf Infrastructure as Code (IaC) mit Terraform und Kubernetes fokusiert habe. Durch die
@@ -168,12 +169,12 @@
           </div>
         </div>
         <div class="spacer"></div>
-        <h3 class="text-center py-10 text-6xl lg:text-4xl">Cyber Security</h3>
+        <h3 class="text-center py-10 text-3xl lg:text-4xl">Cyber Security</h3>
         <div class="flex flex-col lg:flex-row-reverse">
           <div class="bg-center bg-cover flex-1 lg:grow-0 aspect-square lg:basis-[400px]"
             style="background-image:url('/assets/img/cybersec.png');"></div>
           <div class="flex-1 px-8 lg:px-4 py-8 lg:py-0">
-            <p class="text-5xl leading-normal lg:text-base">
+            <p class="text-lg leading-normal lg:text-base">
               Mit einem großen Interesse an Cybersecurity setze ich mich als Hobby-Hacker intensiv mit den
               Vorgehensweisen von Hackern auseinander. Diese Erfahrungen fließen nahtlos in meine Arbeit als
               Software- und Cloud-Engineer ein. Durch die Anwendung dieses Wissens kann ich sicherstellen, dass meine
@@ -184,18 +185,18 @@
           </div>
         </div>
         <a id="contact"></a>
-        <h2 class="text-center py-10 text-6xl lg:text-4xl">Kontakt</h2>
+        <h2 class="text-center py-10 text-3xl lg:text-4xl">Kontakt</h2>
         <div class="text-center py-4 lg:block">
-          <a class="text-[#164863] font-bold flex flex-col items-center text-center text-5xl py-12 lg:text-xl px-8
+          <a class="text-[#164863] font-bold flex flex-col items-center text-center text-lg py-12 lg:text-xl px-8
                      lg:inline" href="https://www.linkedin.com/in/marvin-kurock-34857b1b6/" target="_blank"
             rel="noopener noreferrer">
             <img class="mr-4 mb-4 lg:mb-0 inline w-52 rounded-xl lg:w-12" src="assets/img/linkedin.png" />LinkedIn
           </a>
-          <a class="text-[#164863] font-bold flex flex-col items-center text-center text-5xl py-12 lg:text-xl px-8
+          <a class="text-[#164863] font-bold flex flex-col items-center text-center text-lg py-12 lg:text-xl px-8
                      lg:inline" href="https://www.xing.com/profile/Marvin_Kurock/" target="_blank"
             rel="noopener noreferrer"><img class="mr-4 mb-4 lg:mb-0 inline w-52 rounded-xl lg:w-12"
               src="assets/img/xing.png" />XING</a>
-          <a href="#" onclick="xyz()" class="text-[#164863] font-bold flex flex-col items-center text-center text-5xl py-12 lg:text-xl px-8
+          <a href="#" onclick="xyz()" class="text-[#164863] font-bold flex flex-col items-center text-center text-lg py-12 lg:text-xl px-8
                      lg:inline" href="" rel="noopener noreferrer"><img
               class="mr-4 mb-4 lg:mb-0 inline w-52 align-middle rounded-xl lg:w-12"
               src="assets/img/mail.png" />marvin(@)kurock.io</a>
